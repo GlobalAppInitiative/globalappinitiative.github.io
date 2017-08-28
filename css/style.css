@@ -1,0 +1,39 @@
+* { /* Fresh css palette to overwrite any unexpected browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.navbar-content li {
+    display: block;
+    padding: 10px 15px;
+}
+
+h1 {
+    position: relative;
+    top: 100px; /* Vertical offset to account for the navbar */
+}
