@@ -9,16 +9,20 @@
 }
 
 body {
-    color: #fff;
     font-family: 'Arvo', serif;
+    color: #fff;
 }
 
 #navbar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+
     position: fixed;
     display: flex;
     width: 100%;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    padding-top: 0.3rem;
 }
 
 .navbar-logo {
@@ -26,6 +30,9 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    width: 7rem;
+    height: 7rem;
+    padding-left: 0.6rem;
 }
 
 .navbar-content {
@@ -35,9 +42,21 @@ body {
     align-items: center;
     width: 100%;
 }
-.navbar-content li {
+.navbar-content a {
+    color: #fff;
+    text-shadow: 0px 0px 8px #000;
+    text-decoration: none;
+
     display: block;
-    padding: 10px 15px;
+    padding: 0 2rem; /* Top and bottom padding doesn't matter because align-items: center */
+}
+.navbar-content a:last-child {
+    padding-right: 3rem;
+}
+
+.navbar-divider {
+    border-left: 1px solid #fff;
+    height: 1.5rem;
 }
 
 .landing-text-container {
@@ -52,11 +71,14 @@ body {
     background-size: cover;
     z-index: -100;
 
-    font-size: 3.75rem;
     text-shadow: 0px 0px 40px #000;
+}
+
+.landing-text-container h1 {
+    font-size: 3.75rem;
 }
 .landing-text-container  h2 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.5rem;
 }
