@@ -82,3 +82,17 @@ body {
     font-weight: 300;
     font-size: 1.5rem;
 }
+
+.temp-background {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("http://boston.university-tour.com/images/bg-image.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -100;
+}
