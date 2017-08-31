@@ -110,14 +110,6 @@ ul li {
     </ul>
   </div>
 
-  <!--<div class="popuptext" id="p1">
-    <p> This is the second test for project one! </p>
-  </div>
-
-  <div class="popuptext" id="p2">
-    <p> This is the second test for project two! </p>
-  </div> -->
-
   <div id="navbar">
       <a href="#"><img src="../resources/navbar_logo.png" class="navbar-logo" alt="GAI Logo"></a>
       <!-- TODO: This logo should be an empty svg -->
@@ -135,12 +127,9 @@ ul li {
   <script>
   // When the user clicks on div, open the popup
   function myFunction(x) {
-      //var pops = document.getElementsByClassName("popuptext");
-      //pops.style.visibility = "hidden";
       var pop_string = new String(x);
-      //if(pop_string != "p1"){
-        var replacement = document.getElementById("p-desc");
-        replacement.innerHTML = document.getElementById(pop_string).innerHTML;
+      var replacement = document.getElementById("p-desc");
+      replacement.innerHTML = document.getElementById(pop_string).innerHTML;
       //  replacement.classList.toggle("show");
       //}
   }
