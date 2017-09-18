@@ -28,6 +28,7 @@ body {
     display: flex;
     width: 100%;
     padding-top: 0.3rem;
+    z-index: 100;
 }
 
 .navbar-logo {
@@ -100,4 +101,193 @@ body {
     background-size: cover;
     opacity: 0.5;
     z-index: -100;
+}
+
+.about-panel-right {
+  display: flex;
+  position: relative;
+  width: 82%;
+  height: 400px;
+  top: 200px;
+  flex-direction: column;
+  padding-left: 15rem;
+
+  border-style: dotted;
+  border-width: 0px 0px 10px 0px;
+
+  text-shadow: -1px 0 #8c8c8c, 0 1px #8c8c8c, 1px 0 #8c8c8c, 0 -1px #8c8c8c, 0px 0px 40px #000;
+}
+
+.about-panel-right h2 {
+  font-family: 'Arvo', serif;
+  position: absolute;
+  top: 15%;
+  font-size: 3rem;
+
+}
+
+.about-panel-right h3 {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 30%;
+  font-size: 2rem;
+}
+
+.about-panel-right h4 {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 45%;
+  font-size: 1rem;
+
+  margin-right: 40%;
+}
+
+.about-panel-right img {
+  position: relative;
+  border-radius: 100%;
+  right: 10%;
+  height: 65%;
+  top: 10%;
+  align-self: flex-end;
+}
+
+.about-panel-left {
+  display: flex;
+  position: relative;
+  width: 82%;
+  height: 400px;
+  top: 200px;
+  flex-direction: column;
+  padding-right: 15rem;
+  border-style: dotted;
+  border-width: 0px 0px 10px 0px;
+  text-shadow: -1px 0 #8c8c8c, 0 1px #8c8c8c, 1px 0 #8c8c8c, 0 -1px #8c8c8c, 0px 0px 50px #000;
+}
+
+.about-panel-left h2 {
+  font-family: 'Arvo', serif;
+  position: absolute;
+  top: 15%;
+  font-size: 3rem;
+  left: 40%;
+
+}
+
+.about-panel-left h3 {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 30%;
+  font-size: 2rem;
+  left: 40%;
+}
+
+.about-panel-left h4 {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 45%;
+  font-size: 1rem;
+  left: 40%;
+  margin-right: 20%;
+}
+
+.about-panel-left img {
+  position: relative;
+  border-radius: 100%;
+  left: 10%;
+  height: 65%;
+  top: 10%;
+  align-self: flex-start;
+
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    font-family: 'Open Sans', sans-serif;
+    visibility: hidden;
+    height: 20%;
+    width: 700px;
+    height: 450px;
+    background: rgba(250, 250, 250, 0.5);
+    color: rgb(24,25, 85);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 0px 5px grey;
+    text-shadow: 0px 0px 8px #000;
+    left: 45%;
+    margin-left: 30px;
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.project-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 90%;
+  /* height: 20%; */
+  width: 45%;
+  height: 75%;
+  background: rgba(250, 250, 250, 0.5);
+  color: rgb(24,25, 85);
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 0;
+  position: fixed;
+  box-shadow: 0px 0px 5px grey;
+  text-shadow: 0px 0px 8px #000;
+  left: 42%;
+  margin-left: 100px;
+  max-width: 80%;
+  min-width: 300px;
+  margin-right: 3%;
+  top: 150px;
+  overflow-y: auto;
+}
+
+.about-panel {
+  display: flex;
+  position: relative;
+  text-align: center;
+
+  width: 100%;
+  height: 400px;
+  top: 200px;
+  flex-direction: column;
+  font-size: 2.25rem;
+  border-style: dotted;
+  border-width: 0px 0px 10px 0px;
+  text-shadow: -1px 0 #8c8c8c, 0 1px #8c8c8c, 1px 0 #8c8c8c, 0 -1px #8c8c8c, 0px 0px 50px #000;
+}
+
+.about-panel h2 {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
