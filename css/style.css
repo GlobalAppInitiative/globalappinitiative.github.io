@@ -227,7 +227,9 @@ body {
     box-shadow: 0px 0px 5px grey;
     text-shadow: 0px 0px 8px #000;
     left: 45%;
-    margin-left: 30px;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
@@ -259,7 +261,7 @@ body {
   color: rgb(24,25, 85);
   text-align: center;
   border-radius: 6px;
-  padding: 20px 0;
+  padding: 20px 20px 0px 20px;
   position: fixed;
   box-shadow: 0px 0px 5px grey;
   text-shadow: 0px 0px 8px #000;
