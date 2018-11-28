@@ -2,17 +2,37 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+import GAILogo from '../components/gai-logo'
+import './../styles/index.css'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
+    <div className='navbar'>
+  	  <Link to="/submit-a-project/">Submit a Project</Link>
+  	  <span>|</span>
+      <Link to="/join-us/">Join Us</Link>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    
+    <div className='center-div'>
+      <div style={{ maxWidth: '300px', marginLeft: '34%' }}>
+        <GAILogo />
+      </div>
+
+    	<h1>GAI</h1>
+    	<h3>-- Cool tagline --</h3>
+    </div>
+
+    <div className='center-div'>
+    	<button onClick={() => alert("Joined GAI")}>Join GAI</button>
+    	<button onClick={() => alert("Submitted a project")}>Submit a project</button>
+    </div>
+
+    <div>
+    	<h4>Other section with pics and stuff down here</h4>
+    </div>
+
+
+
   </Layout>
 )
 
