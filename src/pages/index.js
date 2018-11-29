@@ -1,19 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import GAILogo from '../components/gai-logo'
+import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import './../styles/index.css'
 
 const IndexPage = () => (
   <div>
-    <div className='navbar'>
-      <Link to="/about-us/">About Us</Link>
-      <span>|</span>
-      <Link to="/join-us/">Join Us</Link>
-  	  <span>|</span>
-      <Link to="/submit-a-project/">Submit a Project</Link>
-    </div>
+    <Navbar />
     
     <div className='center-div'>
       <div style={{ maxWidth: '300px', marginLeft: '40%' }}>
