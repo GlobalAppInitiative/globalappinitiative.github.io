@@ -1,20 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
 import GAILogo from '../components/gai-logo'
+import Footer from '../components/footer'
 import './../styles/index.css'
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <div className='navbar'>
-  	  <Link to="/submit-a-project/">Submit a Project</Link>
-  	  <span>|</span>
+      <Link to="/about-us/">About Us</Link>
+      <span>|</span>
       <Link to="/join-us/">Join Us</Link>
+  	  <span>|</span>
+      <Link to="/submit-a-project/">Submit a Project</Link>
     </div>
     
     <div className='center-div'>
-      <div style={{ maxWidth: '300px', marginLeft: '34%' }}>
+      <div style={{ maxWidth: '300px', marginLeft: '40%' }}>
         <GAILogo />
       </div>
 
@@ -31,9 +33,9 @@ const IndexPage = () => (
     	<h4>Other section with pics and stuff down here</h4>
     </div>
 
+    <Footer />
+  </div>
 
-
-  </Layout>
 )
 
 export default IndexPage

@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import Footer from '../components/footer'
 
-const SubmitAProject = () => (
+const AboutUsPage = () => (
   <div>
     <h1>Hi from the About Us page</h1>
     <p>Welcome to the page</p>
@@ -12,4 +12,4 @@ const SubmitAProject = () => (
   </div>
 )
 
-export default SubmitAProject
+export default AboutUsPage

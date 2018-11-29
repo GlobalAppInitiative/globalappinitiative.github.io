@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
+import Footer from '../components/footer'
 
 const JoinUsPage = () => (
-  <Layout>
-    <h1>Hi from the Join Us page</h1>
+  <div>
+    <h1>Hi from the About Us page</h1>
     <p>Welcome to the page</p>
     <Link to="/">Go back to the homepage</Link>
-  </Layout>
+    <Footer />
+  </div>
 )
 
 export default JoinUsPage
